@@ -1,0 +1,73 @@
++----+-----------------+--------+-------------+---------------+--------------------+------------------+--------------+-------------------+-------+-----------+-----------+------------+--------------+------+
+| age|        workcalss|  flngwt|    education|educationNumber|       maritalStatus|        occupation|  relationship|               race|    sex|capitalGain|capitalLoss|hoursPerWeek| nativeCountry|income|
++----+-----------------+--------+-------------+---------------+--------------------+------------------+--------------+-------------------+-------+-----------+-----------+------------+--------------+------+
+|39.0|        State-gov| 77516.0|    Bachelors|           13.0|       Never-married|      Adm-clerical| Not-in-family|              White|   Male|     2174.0|        0.0|        40.0| United-States| <=50K|
+|50.0| Self-emp-not-inc| 83311.0|    Bachelors|           13.0|  Married-civ-spouse|   Exec-managerial|       Husband|              White|   Male|        0.0|        0.0|        13.0| United-States| <=50K|
+|38.0|          Private|215646.0|      HS-grad|            9.0|            Divorced| Handlers-cleaners| Not-in-family|              White|   Male|        0.0|        0.0|        40.0| United-States| <=50K|
+|53.0|          Private|234721.0|         11th|            7.0|  Married-civ-spouse| Handlers-cleaners|       Husband|              Black|   Male|        0.0|        0.0|        40.0| United-States| <=50K|
+|28.0|          Private|338409.0|    Bachelors|           13.0|  Married-civ-spouse|    Prof-specialty|          Wife|              Black| Female|        0.0|        0.0|        40.0|          Cuba| <=50K|
+|37.0|          Private|284582.0|      Masters|           14.0|  Married-civ-spouse|   Exec-managerial|          Wife|              White| Female|        0.0|        0.0|        40.0| United-States| <=50K|
+|49.0|          Private|160187.0|          9th|            5.0| Married-spouse-a...|     Other-service| Not-in-family|              Black| Female|        0.0|        0.0|        16.0|       Jamaica| <=50K|
+|52.0| Self-emp-not-inc|209642.0|      HS-grad|            9.0|  Married-civ-spouse|   Exec-managerial|       Husband|              White|   Male|        0.0|        0.0|        45.0| United-States|  >50K|
+|31.0|          Private| 45781.0|      Masters|           14.0|       Never-married|    Prof-specialty| Not-in-family|              White| Female|    14084.0|        0.0|        50.0| United-States|  >50K|
+|42.0|          Private|159449.0|    Bachelors|           13.0|  Married-civ-spouse|   Exec-managerial|       Husband|              White|   Male|     5178.0|        0.0|        40.0| United-States|  >50K|
+|37.0|          Private|280464.0| Some-college|           10.0|  Married-civ-spouse|   Exec-managerial|       Husband|              Black|   Male|        0.0|        0.0|        80.0| United-States|  >50K|
+|30.0|        State-gov|141297.0|    Bachelors|           13.0|  Married-civ-spouse|    Prof-specialty|       Husband| Asian-Pac-Islander|   Male|        0.0|        0.0|        40.0|         India|  >50K|
+|23.0|          Private|122272.0|    Bachelors|           13.0|       Never-married|      Adm-clerical|     Own-child|              White| Female|        0.0|        0.0|        30.0| United-States| <=50K|
+|32.0|          Private|205019.0|   Assoc-acdm|           12.0|       Never-married|             Sales| Not-in-family|              Black|   Male|        0.0|        0.0|        50.0| United-States| <=50K|
+|40.0|          Private|121772.0|    Assoc-voc|           11.0|  Married-civ-spouse|      Craft-repair|       Husband| Asian-Pac-Islander|   Male|        0.0|        0.0|        40.0|             ?|  >50K|
+|34.0|          Private|245487.0|      7th-8th|            4.0|  Married-civ-spouse|  Transport-moving|       Husband| Amer-Indian-Eskimo|   Male|        0.0|        0.0|        45.0|        Mexico| <=50K|
+|25.0| Self-emp-not-inc|176756.0|      HS-grad|            9.0|       Never-married|   Farming-fishing|     Own-child|              White|   Male|        0.0|        0.0|        35.0| United-States| <=50K|
+|32.0|          Private|186824.0|      HS-grad|            9.0|       Never-married| Machine-op-inspct|     Unmarried|              White|   Male|        0.0|        0.0|        40.0| United-States| <=50K|
+|38.0|          Private| 28887.0|         11th|            7.0|  Married-civ-spouse|             Sales|       Husband|              White|   Male|        0.0|        0.0|        50.0| United-States| <=50K|
+|43.0| Self-emp-not-inc|292175.0|      Masters|           14.0|            Divorced|   Exec-managerial|     Unmarried|              White| Female|        0.0|        0.0|        45.0| United-States|  >50K|
++----+-----------------+--------+-------------+---------------+--------------------+------------------+--------------+-------------------+-------+-----------+-----------+------------+--------------+------+
+only showing top 20 rows
+
+Solving question 1:
++--------------------+----------+
+|       maritalStatus|male_ratio|
++--------------------+----------+
+|  Married-civ-spouse|      0.89|
+|       Never-married|      0.55|
+| Married-spouse-a...|      0.51|
+|            Divorced|       0.4|
+|   Married-AF-spouse|      0.39|
+|           Separated|      0.38|
+|             Widowed|      0.17|
++--------------------+----------+
+
+Solving question 2:
++-------------------+------------------+
+|      nativeCountry| avg(hoursPerWeek)|
++-------------------+------------------+
+|             Greece|              65.0|
+|           Honduras|              60.0|
+|              South|56.666666666666664|
+|           Thailand|              50.0|
+| Dominican-Republic|              47.0|
+|             Canada|46.111111111111114|
+|             Poland|              45.0|
+|             France|              45.0|
+|           Portugal|              43.0|
+|              Italy|              42.0|
+|      United-States|40.492537313432834|
+|        Philippines|40.083333333333336|
+|            Ireland|              40.0|
+|         Yugoslavia|              40.0|
+|               Iran|              40.0|
+|            Vietnam|              40.0|
+|               Hong|              40.0|
+|        El-Salvador|              40.0|
+|            Hungary|              40.0|
+|           Scotland|              40.0|
++-------------------+------------------+
+only showing top 20 rows
+
+Solving question 3:
++------+----------------+-----------------+
+|income|lowest_education|highest_education|
++------+----------------+-----------------+
+|  >50K|         1st-4th|        Doctorate|
+| <=50K|       Preschool|        Doctorate|
++------+----------------+-----------------+
