@@ -1,0 +1,104 @@
+\section{Exercise 3}
+
+\begin{table}[!htb]
+    \centering
+    \begin{tabular}{lllllllllll}
+    \hline
+               & \textbf{a} & \textbf{b} & \textbf{c} & \textbf{d} & \multicolumn{2}{l}{\textbf{e}} & \textbf{f} & \multicolumn{2}{l}{\textbf{g}} & \textbf{h} \\ \hline
+    \textbf{A} & 4          & 5          &            & 5          & \multicolumn{2}{l}{1}          &            & \multicolumn{2}{l}{3}          & 2          \\
+    \textbf{B} &            & 3          & 4          & 3          & \multicolumn{2}{l}{1}          & 2          & \multicolumn{2}{l}{1}          &            \\
+    \textbf{C} & 2          &            & 1          & 3          & \multicolumn{2}{l}{}           & 4          & \multicolumn{2}{l}{5}          & 3          \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{enumerate}[label=(\alph*)]
+    \item Taking the utility matrix as a boolean matrix, the Jaccard similarity lead to
+    \begin{align*}
+        JacSim(A,B) &= \frac{|A \cap B|}{|A \cup B|} \\
+                &= \frac{|\{b,d,e,g\}|}{|\{a,b,c,d,e,f,g,h\}|} \\
+                &= 0.5 \\ \\
+        JacSim(A,C) &= \frac{|\{a,d,g,h\}|}{|\{a,b,c,d,e,f,g,h\}|} \\
+                &= 0.5 \\ \\
+        JacSim(B,C) &= \frac{|\{c,d,f,g\}|}{|\{a,b,c,d,e,f,g,h\}|} \\
+                &= 0.5
+    \end{align*}
+    And so the Jaccard distance is given as
+    \[JacDist(A,B) = JacDist(A,C) = JacDist(B,C) = 1-0.5 = 0.5\]
+    \item For the cosine distance the missing values of ratings will be set to 0 and so the the cosine distance is given as 
+    \begin{align*}
+        \cos(A,B) &= \frac{A \cdot B}{||A|| \cdot ||B||} \\
+                &=  \frac{4 \cdot 0 + 5 \cdot 3 + 0 \cdot 4 + 5 \cdot 3 + 1 \cdot 1 + 0 \cdot 2 + 3 \cdot 1 + 2 \cdot 0}{\sqrt{4^2 + 5^2 + 5^2 + 1^2 + 3^2 + 2^2} \cdot \sqrt{3^2 + 4^2 + 3^2 + 1^2 + 2^2 + 1^2}} \\
+                &= 0.60104 \\
+    \end{align*}
+    For $A, C$ and $B, C$ follows using the same calculation:
+    \begin{align*}
+        \cos(A,C) &= 0.61492 \\
+        \cos(B,C) &= 0.51387
+    \end{align*}
+    \item The modified utility matrix using ratings of 3,4,5 as 1 and 1,2 and blank as 0 is given as
+    
+    \begin{table}[!htb]
+        \centering
+        \begin{tabular}{lllllllll}
+        \hline
+                   & \textbf{a} & \textbf{b} & \textbf{c} & \textbf{d} & \textbf{e} & \textbf{f} & \textbf{g} & \textbf{h} \\ \hline
+        \textbf{A} & 1          & 1          & 0          & 1          & 0          & 0          & 1          & 0          \\
+        \textbf{B} & 0          & 1          & 1          & 1          & 0          & 0          & 0          & 0          \\
+        \textbf{C} & 0          & 0          & 0          & 1          & 0          & 1          & 1          & 1          \\ \hline
+        \end{tabular}
+    \end{table}
+
+    And so the Jaccard similarity yields to:
+    \begin{align*}
+        JacSim(A,B) &= \frac{|A \cap B|}{|A \cup B|} \\
+                &= \frac{|\{b,d\}|}{|\{a,b,c,d,g\}|} \\
+                &= \frac{2}{5} \\ \\
+        JacSim(A,C) &= \frac{|\{d,g\}|}{|\{a,b,d,f,g,h\}|} \\
+                &= \frac{1}{3} \\ \\
+        JacSim(B,C) &= \frac{|\{d\}|}{|\{b,c,d,f,g,h\}|} \\
+                &= \frac{1}{6}
+    \end{align*}
+    The Jaccard distance is given as follows:
+    \begin{align*}
+        JacDist(A,B) &= 1 - \frac{2}{5} = 0.6\\
+        JacDist(A,C) &= 1 - \frac{1}{3} = 0.667\\
+        JacDist(B,C) &= 1 - \frac{1}{6} = 0.833
+    \end{align*}
+    \item Recalculating cosine distance using the modified matrix from part c) gives us
+    \begin{align*}
+        \cos(A,B) &= \frac{A \cdot B}{||A|| \cdot ||B||} \\
+                &=  \frac{2 \cdot 1}{\sqrt{4} \cdot \sqrt{3}} \\
+                &= 0.57735 \\
+    \end{align*}
+    For $A, C$ and $B, C$ follows using the same calculation:
+    \begin{align*}
+        \cos(A,C) &= 0.50000 \\
+        \cos(B,C) &= 0.28867
+    \end{align*}
+    \item The average values for each user considering all non-blank entries are given as:
+    \begin{align*}
+        avgModified(A) &= 3.333 \\
+        avgModified(B) &= 2.333\\
+        avgModified(C) &= 3.000\\
+    \end{align*}
+    So the modified matrix by normalizing the data of the non-zero-values is given as 
+
+    \begin{table}[!htb]
+        \centering
+        \begin{tabular}{lllllllll}
+        \hline
+                   & \textbf{a} & \textbf{b} & \textbf{c} & \textbf{d} & \textbf{e} & \textbf{f} & \textbf{g} & \textbf{h} \\ \hline
+        \textbf{A} & 0.667      & 1.667      & 0          & 1.667      & -2.333     & 0          & -0.333     & -1.333     \\
+        \textbf{B} & 0          & 0.667      & 1.667      & 0.667      & -1.333     & -0.333     & -1.333     & 0          \\
+        \textbf{C} & -1.0       & 0          & -2.0       & 0.0        & 0          & 1.0        & 2.0        & 0.0        \\ \hline
+        \end{tabular}
+    \end{table}
+
+    \item And the corresponding cosine distance values as
+    \begin{align*}
+        \cos(A,B) &= 0.58431\\
+        \cos(A,C) &= -0.11547 \\
+        \cos(B,C) &= -0.73957
+    \end{align*}
+    
+\end{enumerate}

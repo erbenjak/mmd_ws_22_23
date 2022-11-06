@@ -14,14 +14,14 @@
 \begin{enumerate}[label=(\alph*)]
     \item If $\alpha = \beta = 1$, all features keep the same values when scaling. So the cosinus similarity is given by
     \begin{align*}
-        cos(A,B) &= \frac{a \cdot b}{||a|| \cdot ||b||} \\
+        \cos(A,B) &= \frac{A \cdot B}{||A|| \cdot ||B||} \\
                 &=  \frac{3.06 \cdot 2.68 + 500 \cdot 320 + 6 \cdot 4}{\sqrt{3.06^2 + 500^2 + 6^2} \cdot \sqrt{2.68^2 + 320^2 + 4^2}} \\
                 &= 0.9999973
     \end{align*}
     For $A, C$ and $B, C$ follows using the same calculation:
     \begin{align*}
-        cos(A,C) &= 0.9999953 \\
-        cos(B,C) &= 0.9999878
+        \cos(A,C) &= 0.9999953 \\
+        \cos(B,C) &= 0.9999878
     \end{align*}
     \item For $\alpha = 0.01$ and $\beta = 0.5$ the adapted features yield: 
     \begin{table}[!htb]
@@ -34,12 +34,12 @@
         Main-Memory-Size & 3          & 2          & 3          \\ \hline
         \end{tabular}
     \end{table}
-    
+
     Using the same formula as above in part a), we obtain the following results: 
     \begin{align*}
-        cos(A,B) &= 0.9908815 \\
-        cos(A,C) &= 0.9915547 \\
-        cos(B,C) &= 0.9691779
+        \cos(A,B) &= 0.9908815 \\
+        \cos(A,C) &= 0.9915547 \\
+        \cos(B,C) &= 0.9691779
     \end{align*}
 
     \item The averages of $A, B, C$ are given as
@@ -62,9 +62,9 @@
 
     And the cosine values then result as 
     \begin{align*}
-        cos(A,B) &= 0.9898552 \\
-        cos(A,C) &= 0.9915270 \\
-        cos(B,C) &= 0.9692788
+        \cos(A,B) &= 0.9898552 \\
+        \cos(A,C) &= 0.9915270 \\
+        \cos(B,C) &= 0.9692788
     \end{align*}
     
 \end{enumerate}

@@ -1,0 +1,31 @@
+\section{Exercise}
+
+
+\textbf{How can a competitor - in principle - try to steal the valuable data for
+recommendation from this website?}
+
+He could try to extract the rating values by liking items and determining the recommended items. With the
+main goal of recreating the data from on which those recommendations are calculated in the first place. \\
+
+
+\textbf{Does this work better when the web shop implemented a content based or a collaborative filtering system?}
+
+This would work better with a collaborative system as the content based one is focused on the preferences of the user, which the competitor would then define himself by the first likes that he chooses. A collaborative system on the other hand draws conclusions from the whole user/item base. \\
+
+
+\textbf{What data would the competitor be able to infer?}
+\begin{itemize}
+ \item Clusters of simular items 
+ \item List of popular items (recommended quite heavely)
+ \item List of unpopular item (rarely recommended)
+\end{itemize}
+
+
+\textbf{Would this technique has an impact on the recommendation system,
+i.e., would this attack create a bias on the data?}
+
+Only if it is a small system with a very limited amount of users. Because only than, the impact of single preference is high. This however does not apply when comparing between items. Or when working against a collaborative system. In which case, the attacker would only confuse his own recommendations. \\
+
+\textbf{Why is this attack probably not viable in any case?}
+
+The target system would need to be in a quite extreme dependency for a singular user profile. This would speak against the recommender system heavily, in which case it is probably not even giving good recommendations in the very first place.
