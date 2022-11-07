@@ -1,0 +1,23 @@
+TASK A)
+The utility matric is storred in a coordinate Matrix: <pyspark.mllib.linalg.distributed.CoordinateMatrix object at 0x7f0a0a5fe2f0>
+
+TASK B)
+We try to determine the coefficient between two random employees
+Note: Since we could not get the pyspark coefficient function to work we convert the vector numpy-arrays and use its pearson correlation function
+The peason coefficient between user 2010008 und 1041919 is: 0.09409467540245701
+
+
+TASK C) - a all correlation coefficients are determined and than sorted
+showing the top 5 results for user 1000647
++-------+-------+-----------+
+|userid1|userid2|correlation|
++-------+-------+-----------+
+|1000647|2023686|0.118076965|
+|1000647|1009943| 0.11065938|
+|1000647|1024631| 0.08595651|
+|1000647|1001440| 0.08129665|
+|1000647|1052461| 0.07622112|
++-------+-------+-----------+
+only showing top 5 rows
+
+
