@@ -1,0 +1,113 @@
+!!!!!!!
+Small Note
+This currently only works for very small numbers or runs into NANs
+
+Maybe this is a learning rate issue. Unsure as to why?
+Maybe it could also be an issue with picking a bad initial guess. 
+!!!!!!!!!!!
+
+Function we will try to find: 3x³-2x-17
+caclulating gradient for function with degree:3
+The MSE at iteration 0 is:454.8
+The MSE at iteration 1 is:448.8805172
+The MSE at iteration 2 is:443.05834912128813
+The MSE at iteration 3 is:437.3354804845715
+The MSE at iteration 4 is:431.7139230674943
+The MSE at iteration 5 is:426.1957160329883
+The MSE at iteration 6 is:420.78292626142525
+The MSE at iteration 7 is:415.4776486866144
+The MSE at iteration 8 is:410.28200663568896
+The MSE at iteration 9 is:405.1981521729242
+The MSE at iteration 10 is:400.22826644753286
+The MSE at iteration 11 is:395.3745600454835
+The MSE at iteration 12 is:390.63927334538585
+The MSE at iteration 13 is:386.02467687849
+The MSE at iteration 14 is:381.53307169284653
+The MSE at iteration 15 is:377.16678972167347
+The MSE at iteration 16 is:372.92819415597893
+The MSE at iteration 17 is:368.81967982148683
+The MSE at iteration 18 is:364.8436735599148
+The MSE at iteration 19 is:361.0026346146534
+The MSE at iteration 20 is:357.2990550208963
+The MSE at iteration 21 is:353.73546000027204
+The MSE at iteration 22 is:350.3144083600288
+The MSE at iteration 23 is:347.03849289682194
+The MSE at iteration 24 is:343.91034080515897
+The MSE at iteration 25 is:340.9326140905517
+The MSE at iteration 26 is:338.1080099874323
+The MSE at iteration 27 is:335.43926138188317
+The MSE at iteration 28 is:332.9291372392388
+The MSE at iteration 29 is:330.58044303661194
+The MSE at iteration 30 is:328.3960212004009
+The MSE at iteration 31 is:326.3787515488354
+The MSE at iteration 32 is:324.531551739615
+The MSE at iteration 33 is:322.857377722701
+The MSE at iteration 34 is:321.3592241983172
+The MSE at iteration 35 is:320.04012508022083
+The MSE at iteration 36 is:318.9031539643013
+The MSE at iteration 37 is:317.95142460256784
+The MSE at iteration 38 is:317.1880913825871
+The MSE at iteration 39 is:316.61634981243185
+The MSE at iteration 40 is:316.2394370112028
+The MSE at iteration 41 is:316.06063220518735
+The MSE at iteration 42 is:316.0832572297181
+The MSE at iteration 43 is:316.3106770367963
+The MSE at iteration 44 is:316.7463002085438
+The MSE at iteration 45 is:317.393579476552
+The MSE at iteration 46 is:318.25601224719105
+The MSE at iteration 47 is:319.33714113294917
+The MSE at iteration 48 is:320.6405544898696
+The MSE at iteration 49 is:322.1698869611523
+The MSE at iteration 50 is:323.92882002699326
+The MSE at iteration 51 is:325.921082560728
+The MSE at iteration 52 is:328.15045139135333
+The MSE at iteration 53 is:330.62075187249843
+The MSE at iteration 54 is:333.33585845791725
+The MSE at iteration 55 is:336.2996952835763
+The MSE at iteration 56 is:339.5162367564135
+The MSE at iteration 57 is:342.9895081498407
+The MSE at iteration 58 is:346.7235862060683
+The MSE at iteration 59 is:350.7225997453277
+The MSE at iteration 60 is:354.9907302820702
+The MSE at iteration 61 is:359.5322126482189
+The MSE at iteration 62 is:364.3513356235568
+The MSE at iteration 63 is:369.45244257332774
+The MSE at iteration 64 is:374.8399320931345
+The MSE at iteration 65 is:380.5182586612133
+The MSE at iteration 66 is:386.49193329817126
+The MSE at iteration 67 is:392.76552423426875
+The MSE at iteration 68 is:399.34365758433063
+The MSE at iteration 69 is:406.231018030376
+The MSE at iteration 70 is:413.43234951204977
+The MSE at iteration 71 is:420.95245592494575
+The MSE at iteration 72 is:428.7962018269102
+The MSE at iteration 73 is:436.9685131524143
+The MSE at iteration 74 is:445.47437793508874
+The MSE at iteration 75 is:454.31884703851057
+The MSE at iteration 76 is:463.507034895335
+The MSE at iteration 77 is:473.04412025486846
+The MSE at iteration 78 is:482.9353469391744
+The MSE at iteration 79 is:493.18602460781176
+The MSE at iteration 80 is:503.80152953130096
+The MSE at iteration 81 is:514.7873053734138
+The MSE at iteration 82 is:526.1488639823938
+The MSE at iteration 83 is:537.8917861911967
+The MSE at iteration 84 is:550.0217226268645
+The MSE at iteration 85 is:562.5443945291242
+The MSE at iteration 86 is:575.4655945783256
+The MSE at iteration 87 is:588.7911877328154
+The MSE at iteration 88 is:602.527112075857
+The MSE at iteration 89 is:616.6793796722054
+The MSE at iteration 90 is:631.2540774344404
+The MSE at iteration 91 is:646.2573679991739
+The MSE at iteration 92 is:661.6954906132373
+The MSE at iteration 93 is:677.5747620299649
+The MSE at iteration 94 is:693.9015774156848
+The MSE at iteration 95 is:710.6824112665336
+The MSE at iteration 96 is:727.9238183357077
+The MSE at iteration 97 is:745.6324345712751
+The MSE at iteration 98 is:763.8149780646573
+The MSE at iteration 99 is:782.4782500099119
+alpha values estimated:[-1.92886434 -0.96616107  0.0310901 ]
+
+Process finished with exit code 0
