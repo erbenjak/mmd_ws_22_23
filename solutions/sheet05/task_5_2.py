@@ -110,16 +110,13 @@ def google_page_rank(dense_input_matrix, beta, iter):
 
 if __name__ == '__main__':
     graph = Graph("web-Stanford_small.txt")
-    print('Loaded graph')
+
     graph.dead_end_removal()
-    print('Removed the dead ends')
+
     graphId_to_matrixId, matrix = graph_to_matrix(graph)
-    print('Converted graph to matrix to plug into algorithm')
     beta = 0.8
     iter = 5
-    print('Performing power iteration and adding probability last:')
-    print('Prinitng intermediate distance results')
+
     rank_vector = google_page_rank(matrix,beta,iter)
-    print('Printing the finished page-rank vector')
     print(rank_vector)
 
