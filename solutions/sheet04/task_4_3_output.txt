@@ -1,0 +1,49 @@
+Starting the page rank routine a) --- for some custom chosen inputs:
+The following input matrix is used: 
+[[0.3   0.5   0.75 ]
+ [0.3   0.    0.125]
+ [0.4   0.5   0.125]]
+The following input beta (no teleport probability) is used:
+ 0.99
+The following eta is used: 0.01
+The following pagerank-vector was calculated:
+[[0.48467262]
+ [0.1880226 ]
+ [0.32730477]]
+
+Creating some clique dense matricies as defined in b):
+
+Generated clique of size 4:
+
+[[0.         0.33333333 0.33333333 0.33333333]
+ [0.33333333 0.         0.33333333 0.33333333]
+ [0.33333333 0.33333333 0.         0.33333333]
+ [0.33333333 0.33333333 0.33333333 0.        ]]
+
+Generated clique of size 6:
+
+[[0.  0.2 0.2 0.2 0.2 0.2]
+ [0.2 0.  0.2 0.2 0.2 0.2]
+ [0.2 0.2 0.  0.2 0.2 0.2]
+ [0.2 0.2 0.2 0.  0.2 0.2]
+ [0.2 0.2 0.2 0.2 0.  0.2]
+ [0.2 0.2 0.2 0.2 0.2 0. ]]
+
+The following input beta (no teleport probability) is used: 0.8
+The following eta is used: 0.08333333333333333
+The following pagerank-vector was calculated (clique size 4):
+[[0.25]
+ [0.25]
+ [0.25]
+ [0.25]]
+
+The following pagerank-vector was calculated (clique size 6):
+[[0.16666667]
+ [0.16666667]
+ [0.16666667]
+ [0.16666667]
+ [0.16666667]
+ [0.16666667]]
+
+Process finished with exit code 0
+
