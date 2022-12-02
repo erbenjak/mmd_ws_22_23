@@ -3,6 +3,7 @@ import numpy.linalg as alg
 from collections import defaultdict
 
 
+
 class Graph:
     def __init__(self, pathToFile):
         raw_data = np.genfromtxt(pathToFile, '\t', skip_header=4)
